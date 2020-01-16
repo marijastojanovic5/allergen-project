@@ -16,12 +16,12 @@ marija = User.create(name: "Marija")
 jenny = User.create(name: "Jenny")
 amia = User.create(name: "Amia")
 
-recipe1 = Recipe.create(name:"Baklava",)
-recipe2 = Recipe.create(name:"Ice cream")
-recipe3 = Recipe.create(name:"Dulce de leche")
-recipe4 = Recipe.create(name:"Cookies")
+recipe1 = Recipe.create(name:"Baklava",user: marija)
+recipe2 = Recipe.create(name:"Ice cream",user:amia)
+recipe3 = Recipe.create(name:"Dulce de leche",user:jenny)
+recipe4 = Recipe.create(name:"Cookies",user:marija)
 
-flour = Ingredient.create(name:"Flour", )
+flour = Ingredient.create(name:"Flour")
 milk = Ingredient.create(name:"Milk")
 sugar = Ingredient.create(name:"Sugar")
 
